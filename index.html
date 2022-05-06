@@ -1,128 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
-        integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Weather Dashboard</title>
-
 </head>
-
 <body>
-    <nav class="navbar is-warning" role="navigator" aria-label="navigation">
-        <div class="navbar-brand">
-            <h1 class="navbar-item subtitle">
-                Weather Dashboard with Bulma
-            </h1>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-end>
-        <div class=" navbar-item" id="headerCity"></div>
-        </div>
-    </nav>
-    <!--Main-->
-    <progress id="progressBar" class="progress is-medium is-primary" style="border-radius:0;"></progress>
-    <!-- main body -->
-    <div class="columns is-desktop" id="main" style="display:none">
-        <div class="column">
-            <!-- start current weather tile -->
-            <section class="section">
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent">
-                        <article class="tile is-child box" style="text-align:center">
-                            <div class="columns is-vcentered">
-                                <div class="column">
-                                    <p class="title" id="currentCity"></p>
-                                    <p class="subtitle" id="currentDate"></p>
-                                    <img id="currentIcon" style="margin-top: -1.5em">
-                                </div>
-                                <div class="column" style="font-weight:600;">
-                                    <div id="currentTemperature"></div>
-                                    <div id="currentHumidity"></div>
-                                    <div id="currentWindSpeed"></div>
-                                    <div id="currentUVIndex"></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-
-                <!-- start 5 day forecast tile -->
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent">
-                        <article class="tile is-child" style="text-align:center">
-                            <p class="subtitle" style="font-weight: 600">5 Day Forecast</p>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-ancestor">
-                    <div class="tile is-parent">
-                        <article class="tile is-child box" id="day1" style="text-align:center"></article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child box" id="day2" style="text-align:center"></article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child box" id="day3" style="text-align:center"></article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child box" id="day4" style="text-align:center"></article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child box" id="day5" style="text-align:center"></article>
-                    </div>
-                </div>
-                <!-- end 5 day tile -->
-            </section>
-        </div>
-        <!-- </section> -->
-        <!-- start search panel -->
-        <div class="column is-one-quarter-desktop">
-            <section class="section">
-                <nav class="panel">
-                    <p class="panel-heading" style="font-size:medium; text-align:center">
-                        Search for a city
-                    </p>
-                    <div class="panel-block">
-                        <p class="control has-icons-left">
-                            <input id="citySearch" class="input" type="text" placeholder="Search">
-                            <span class="icon is-left">
-                                <i class="fas fa-search" aria-hidden="true"></i>
-                            </span>
-                        </p>
-                    </div>
-                    <!-- insert searched cities below -->
-                    <div id="cityHistoryContainer"></div>
-                    <div class="panel-block">
-                        <button id="clear" class="button is-link is-outlined is-danger is-fullwidth">
-                            Clear History
-                        </button>
-                    </div>
-                </nav>
-            </section>
-        </div>
-        <!-- end search panel -->
-    </div>
+    <!-- // Header
+    // Navigator
+    // display primary city  
+    // display past searches
+    // display forecast card/day 1
+    // display forecast card/day 2
+    // display forecast card/day3
+    // display forecast card/day4
+    // display forecast card/day5
+    // clear search history
+    //
 </body>
-
-</html>
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="./script.js"></script>
-</body>
-
 </html>
